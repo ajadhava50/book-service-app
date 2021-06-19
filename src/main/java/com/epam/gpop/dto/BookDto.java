@@ -13,6 +13,8 @@ public class BookDto {
 
     private Long book_id;
     private String name;
+    private Double price;
+    private String author;
     private Date created;
     private Date updated;
 

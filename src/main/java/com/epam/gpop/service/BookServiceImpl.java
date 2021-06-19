@@ -62,6 +62,8 @@ public class BookServiceImpl implements BookService {
         Book bookEntity = new Book();
         bookEntity.setBook_id(bookDto.getBook_id());
         bookEntity.setName(bookDto.getName());
+        bookEntity.setPrice(bookDto.getPrice());
+        bookEntity.setAuthor(bookDto.getAuthor());
         bookEntity.setUpdated(new Date());
        return bookEntity;
     }
@@ -70,6 +72,8 @@ public class BookServiceImpl implements BookService {
         BookDto bookDto = new BookDto();
         bookDto.setBook_id(bookEntity.getBook_id());
         bookDto.setName(bookEntity.getName());
+        bookDto.setPrice(bookEntity.getPrice());
+        bookDto.setAuthor(bookEntity.getAuthor());
         bookDto.setCreated(bookEntity.getCreated());
         bookDto.setUpdated(bookEntity.getUpdated());
         return bookDto;
